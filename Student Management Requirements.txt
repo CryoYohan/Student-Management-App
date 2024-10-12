@@ -1,0 +1,17 @@
+Student Management Requirements:
+
+1.) FRONT-END | Done
+	- "Student Management v1.0" with a line beneath
+	- Entry,Combobox and Labels from IDNO to LEVEL
+	- SAVE and CANCEL button
+	- HUGE TEXT BOX to display the student data from DB
+
+2.) BACK-END | Done
+	- Create Window Blueprint
+	- Reuse Database Blueprint `dbhelper`
+	- Extract Data from Entry and CB Box
+	- Give Buttons Functionality
+
+3.) TRAPPING | Pending
+	- Trap Empty Fields
+	- Trap Unique ID
