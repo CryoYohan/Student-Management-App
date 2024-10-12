@@ -162,5 +162,6 @@ class Window():
         self.displaytextframe()
         
     # A comment
+    # another comment
                    
 
