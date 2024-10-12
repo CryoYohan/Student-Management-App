@@ -161,7 +161,5 @@ class Window():
         self.buttonsframe()
         self.displaytextframe()
         
-    # A comment
-    # another comment
                    
 
