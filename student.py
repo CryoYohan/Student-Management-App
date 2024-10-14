@@ -11,8 +11,16 @@ class Student():
         self.course = args.get('course')
         self.level = args.get('level')
         
-    def __str__(self)->str: 
-        return f"{self.idno},{self.lastname},{self.firstname},{self.course},{self.level}"
+    def __str__(self)->dict: 
+        #return f"{self.idno},{self.lastname},{self.firstname},{self.course},{self.level}"
+        studenrecord = {
+                'idno':self.idno,
+                'lastname':self.lastname,
+                'firstname':self.firstname,
+                'course':self.course,
+                'level':self.level
+                }
+        return studenrecord
         
     def __eq__(self,other)->bool: 
         if type(other) != type(self):                                       

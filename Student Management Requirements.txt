@@ -15,3 +15,7 @@ Student Management Requirements:
 3.) TRAPPING | Pending
 	- Trap Empty Fields
 	- Trap Unique ID
+
+4.) CODE CLEANUP | Pending
+	- Remove Dead code
+	- Make codes shorter and cleaner
