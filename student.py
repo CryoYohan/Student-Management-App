@@ -1,5 +1,5 @@
 '''
-	Student class, extends from Person class
+	Student class, extends from Person class | ctto -> Sir Dennis Durano
 '''
 
 

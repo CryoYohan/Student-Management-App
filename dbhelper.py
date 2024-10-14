@@ -1,5 +1,5 @@
 '''
-	database helper API
+	database helper API | ctto -> Sir Dennis Durano
 '''
 from sqlite3 import connect, Row
 
