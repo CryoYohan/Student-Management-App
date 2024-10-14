@@ -1,7 +1,9 @@
 # Student-Management-App
 A student management app using TKinter GUI and SQLITE3 Database.
 
-![image](https://github.com/user-attachments/assets/36f09e9a-779d-4620-a79b-391d15fc85b9)
-![image](https://github.com/user-attachments/assets/f9f8dc2d-5a9a-4e70-95e5-06e1c55c8b02)
-![image](https://github.com/user-attachments/assets/d1bbb09f-4f91-4a45-a749-f3381d07a5c1)
+![image](https://github.com/user-attachments/assets/b87dac8c-e6e8-4edf-9f3a-560f4f69fb02)
+![image](https://github.com/user-attachments/assets/9061587d-7fe2-4145-a478-fbf3fca37c3a)
+![image](https://github.com/user-attachments/assets/74f91081-8e27-4939-b1f4-a19c1eecef75)
+![image](https://github.com/user-attachments/assets/95b34150-625b-45a2-909b-b5d6447a213f)
+
 
