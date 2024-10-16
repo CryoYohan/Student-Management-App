@@ -13,7 +13,6 @@ class Window():
         self.HEIGHT = 500
         self.table = 'students'
         self.FIELDHEADERS:list = ['IDNO', 'LASTNAME', 'FIRSTNAME', 'COURSE', 'LEVEL']
-        self.checkstate = tk.IntVar()
         self.db = DBHelper()
         self.widgets = []
         self.k=0

@@ -1,6 +1,7 @@
 '''
 	database helper API | ctto -> Sir Dennis Durano
 '''
+import tkinter as tk
 from sqlite3 import connect, Row
 
 class DBHelper():
@@ -32,8 +33,8 @@ class DBHelper():
         #execute command
         cursor.execute(sql)
         #fetch all data
-        data:list = cursor.fetchall()
-        #close database connection
+        data:list = cursor.fetchall() 
+        # close database
         cursor.close()
         #return collected data
         return data

@@ -3,13 +3,23 @@ import tkinter as tk
 import tkinter.messagebox
 from window import Window
 from student import Student
+import sqlite3
 
 class Main(Window):
     def __init__(self):
         super().__init__()
         self.studentrecord = []
         self.table = 'students'
-   
+    
+    def is_duplicate(self,idno)->bool:
+        self.studentrecord= self.db.getall_records(self.table)
+        for student in self.studentrecord:
+            if student[1] == idno:
+                tk.messagebox.showerror('Student Management v1.0', 'Student ID No Already Exists!')
+                self.studentrecord.clear()
+                return False
+        return True
+            
     def displayrecords(self)->None:
         self.studentrecord= self.db.getall_records(self.table)
         for student in self.studentrecord:
@@ -31,14 +41,14 @@ class Main(Window):
     def addstudent(self)->None:
         if self.no_empty_fields():
             # Create Student Object
-            self.student = Student(idno=self.studentrecord[0], lastname=self.studentrecord[1], firstname=self.studentrecord[2],course=self.studentrecord[3],level=self.studentrecord[4])
-            
-            # Add the student object to the database
-            self.db.add_record(self.table,**self.student.__dict__)
-            
-            tk.messagebox.showinfo('Student Management v1.0',f'STUDENT SAVED !!!')
-            
-            self.resetfields() #  -> Reset Entry fields to blanks and Combobox to default values.
+            if not self.is_duplicate(self.studentrecord[0]):                
+                self.student = Student(idno=self.studentrecord[0], lastname=self.studentrecord[1], firstname=self.studentrecord[2],course=self.studentrecord[3],level=self.studentrecord[4])
+                # Add the student object to the database
+                self.db.add_record(self.table,**self.student.__dict__)
+                
+                tk.messagebox.showinfo('Student Management v1.0',f'STUDENT SAVED !!!')
+                
+                self.resetfields() #  -> Reset Entry fields to blanks and Combobox to default values.
         else:
             self.studentrecord.clear()     
                        
