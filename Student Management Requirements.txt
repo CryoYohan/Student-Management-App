@@ -12,7 +12,7 @@ Student Management Requirements:
 	- Extract Data from Entry and CB Box
 	- Give Buttons Functionality
 
-3.) TRAPPING | Pending
+3.) TRAPPING | Done
 	- Trap Empty Fields
 	- Trap Unique ID
 
