@@ -13,7 +13,7 @@ class Window():
         self.HEIGHT = 500
         self.table = 'students'
         self.FIELDHEADERS:list = ['IDNO', 'LASTNAME', 'FIRSTNAME', 'COURSE', 'LEVEL']
-        self.db = DBHelper()
+        self.dbhelper = DBHelper()
         self.widgets = []
         self.k=0
         self.add_widget()
